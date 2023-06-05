@@ -69,6 +69,11 @@ progress::-webkit-progress-value {
   align-items: center;
 }
 
+iframe {
+  height: 100%;
+  width: 100%;
+}
+
 .slide-container.variant-heading {
   background-color: #C0CBFC;
 }
@@ -76,6 +81,13 @@ progress::-webkit-progress-value {
 .slide-center-container {
   max-width: 70%;
   margin-top: -100px;
+}
+
+.slide-center-container.is-fullwidth {
+  height: 90%;
+  width: 90%;
+  max-width: unset;
+  margin-top: 0px;
 }
 
 

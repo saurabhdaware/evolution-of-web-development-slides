@@ -5,7 +5,7 @@ import dedent from 'dedent';
 
 function Slide0() {
   return (
-    <SlideContainer variant="heading" slideNum={0}>
+    <SlideContainer variant="heading">
       <ul>
         <li>How Webpack can call server build and client build</li>
         <li>SSR - Rendering and Hydration</li>
@@ -18,7 +18,7 @@ function Slide0() {
 
 function Slide1() {
   return (
-    <SlideContainer variant="heading" slideNum={1}>
+    <SlideContainer variant="heading">
       <Heading>Evolution of Web Development</Heading>
       <Profile />
     </SlideContainer>
@@ -27,7 +27,43 @@ function Slide1() {
 
 function Slide2() {
   return (
-    <SlideContainer slideNum={2}>
+    <SlideContainer variant="heading">
+      <Heading>Year 2012</Heading>
+    </SlideContainer>
+  )
+}
+
+
+function Slide3() {
+  return (
+    <SlideContainer isFullWidth>
+      <iframe 
+        style={{ border: '1px solid rgba(0, 0, 0, 0.1)', borderRadius: '2px' }} 
+        width="100%" 
+        height="100%" 
+        src="https://codesandbox.io/p/sandbox/billowing-snowflake-80hjnf?file=%2Findex.php%3A20%2C9&embed=1&view=editor" 
+        allowFullScreen
+      />
+    </SlideContainer>
+  )
+}
+
+
+function Slide4() {
+  return (
+    <SlideContainer>
+      <img 
+        width="100%"
+        src="https://res.cloudinary.com/saurabhdaware/image/upload/v1685987156/Screenshot_2023-06-05_at_11.15.48_PM_lkolvx.png" 
+      />
+    </SlideContainer>
+  )
+}
+
+
+function Slide5() {
+  return (
+    <SlideContainer>
       <div style={{ width: '1000px' }}>
         <SandpackProvider >
           <SandpackLayout style={{ backgroundColor: 'white' }}>
@@ -49,9 +85,11 @@ function Slide2() {
   )
 }
 
-function Slide3() {
+
+
+function Slide6() {
   return (
-    <SlideContainer slideNum={3}>
+    <SlideContainer>
       <div style={{ width: '1000px' }}>
         <SandpackProvider>
           <SandpackLayout style={{ backgroundColor: 'white' }}>
@@ -83,17 +121,17 @@ function Slide3() {
 }
 
 
-function Slide4() {
+function Slide7() {
   return (
-    <SlideContainer slideNum={4}>
+    <SlideContainer>
       <div style={{ width: '1000px' }}>
         <SandpackProvider>
           <SandpackLayout style={{ backgroundColor: 'white' }}>
             <SandpackCodeViewer 
-            decorators={[
-              { className: "highlight", line: 5 },
-              { className: "highlight", line: 6 },
-            ]}
+              decorators={[
+                { className: "highlight", line: 5 },
+                { className: "highlight", line: 6 },
+              ]}
               code={dedent`
               // index.html
               <html>
@@ -120,26 +158,17 @@ function Slide4() {
 }
 
 
-function Slide5() {
+function Slide8() {
   return (
-    <SlideContainer slideNum={5} variant="heading">
-      <Heading size="medium">Unmaintainable 😭</Heading>
-    </SlideContainer>
-  )
-}
-
-
-function Slide6() {
-  return (
-    <SlideContainer slideNum={6} variant="heading">
+    <SlideContainer variant="heading">
       <Heading size="medium">✨ Bundlers ✨</Heading>
     </SlideContainer>
   )
 }
 
-function Slide7() {
+function Slide9() {
   return (
-    <SlideContainer slideNum={7}>
+    <SlideContainer>
       <div style={{ width: '1000px' }}>
         <SandpackProvider>
           <SandpackLayout style={{ backgroundColor: 'white' }}>
@@ -155,6 +184,10 @@ function Slide7() {
               `}
             />
             <SandpackCodeViewer 
+               decorators={[
+                { className: "highlight", line: 2 },
+                { className: "highlight", line: 3 },
+              ]}
               code={dedent`
               // index.js
               import { getText } from './helpers.js';
@@ -170,9 +203,10 @@ function Slide7() {
   )
 }
 
-function Slide8() {
+
+function Slide10() {
   return (
-    <SlideContainer slideNum={8}>
+    <SlideContainer>
       <div style={{ width: '1000px', textAlign: 'center' }}>
         <SubHeading>Webpack + TypeScript</SubHeading><br/>
         <SandpackProvider>
@@ -214,9 +248,9 @@ function Slide8() {
 }
 
 
-function Slide9() {
+function Slide11() {
   return (
-    <SlideContainer slideNum={9}>
+    <SlideContainer>
       <div style={{ width: '1000px', textAlign: 'center' }}>
         <SubHeading>Webpack + Babel</SubHeading><br/>
         <SandpackProvider>
@@ -261,9 +295,9 @@ function Slide9() {
 }
 
 
-function Slide10() {
+function Slide12() {
   return (
-    <SlideContainer slideNum={10}>
+    <SlideContainer>
       <div style={{ width: '1000px', textAlign: 'center' }}>
         <SubHeading>Webpack + Vue</SubHeading><br/>
         <SandpackProvider>
@@ -305,9 +339,9 @@ function Slide10() {
 
 
 
-function Slide11() {
+function Slide13() {
   return (
-    <SlideContainer slideNum={11}>
+    <SlideContainer>
       <div style={{ width: '1000px', textAlign: 'center' }}>
         <SubHeading>Webpack + New Syntax</SubHeading><br/>
         <SandpackProvider>
@@ -362,4 +396,6 @@ export {
   Slide9,
   Slide10,
   Slide11,
+  Slide12,
+  Slide13,
 }

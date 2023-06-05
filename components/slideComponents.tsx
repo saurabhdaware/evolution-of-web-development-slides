@@ -1,11 +1,23 @@
 import React from "react";
 import './slides.css';
 
-function SlideContainer({ children, variant, slideNum }: { children: React.ReactNode; variant?: 'heading'; slideNum: number }) {
+const getCurrentSlideNumber = () => {
+  if (typeof window !== 'undefined') {
+    return Number(window.location.pathname.slice(1));
+  }
+
+  return 0;
+}
+
+const TOTAL_SLIDE_COUNT = 20;
+
+function SlideContainer({ children, variant, isFullWidth = false }: { children: React.ReactNode; variant?: 'heading'; isFullWidth?: boolean }) {
+  const currentSlideNumber = getCurrentSlideNumber();
+
   return (
     <div className={`slide-container variant-${variant}`}>
-      <progress value={slideNum} max="20" />
-      <div className="slide-center-container">
+      <progress value={currentSlideNumber} max={TOTAL_SLIDE_COUNT} />
+      <div className={`slide-center-container ${isFullWidth ? 'is-fullwidth' : ''}`}>
         {children}
       </div>
     </div>

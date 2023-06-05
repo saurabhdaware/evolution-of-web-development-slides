@@ -18,8 +18,6 @@ const routes = [
     })
 ];
 
-console.log({ routes });
-
 const useSlides = () => {
   const navigate = useNavigate();
 
