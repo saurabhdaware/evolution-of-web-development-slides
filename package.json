@@ -1,0 +1,20 @@
+{
+	"type": "module",
+	"scripts": {
+		"dev": "abell dev",
+		"build": "abell generate"
+	},
+	"dependencies": {
+		"@codesandbox/sandpack-react": "^2.6.7",
+		"dedent": "^0.7.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.11.2"
+	},
+	"devDependencies": {
+		"@types/react": "^18.2.8",
+		"@types/react-dom": "^18.2.4",
+		"@vitejs/plugin-react": "^4.0.0",
+		"abell": "1.0.0-alpha.83"
+	}
+}
