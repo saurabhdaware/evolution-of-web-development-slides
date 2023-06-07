@@ -80,7 +80,6 @@ iframe {
 
 .slide-center-container {
   max-width: 70%;
-  margin-top: -100px;
 }
 
 .slide-center-container.is-fullwidth {
@@ -116,4 +115,10 @@ iframe {
 .slide-subheading {
   font-size: 2rem;
   font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #09f;
+  font-weight: bold;
 }

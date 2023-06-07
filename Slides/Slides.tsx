@@ -5,13 +5,8 @@ import dedent from 'dedent';
 
 function Slide0() {
   return (
-    <SlideContainer variant="heading">
-      <ul>
-        <li>How Webpack can call server build and client build</li>
-        <li>SSR - Rendering and Hydration</li>
-        <li>Problems with Hydration</li>
-        <li>Next thing in Web Development - Solving hydration problems</li>
-      </ul>
+    <SlideContainer>
+      <Heading>Test</Heading>
     </SlideContainer>
   )
 }
@@ -44,6 +39,7 @@ function Slide3() {
         src="https://codesandbox.io/p/sandbox/billowing-snowflake-80hjnf?file=%2Findex.php%3A20%2C9&embed=1&view=editor" 
         allowFullScreen
       />
+      <a target="_blank" href="https://codesandbox.io/p/sandbox/billowing-snowflake-80hjnf?file=%2Findex.php">Open in Editor</a>
     </SlideContainer>
   )
 }
@@ -380,6 +376,28 @@ function Slide13() {
     </SlideContainer>
   )
 }
+
+// Slide 14: https://res.cloudinary.com/saurabhdaware/image/upload/v1686169527/Untitled-2022-06-16-2029_kuart5.png
+
+// Slide 15: Server / Client Builds in Webpack
+
+// Slide 16: Problems with Client-Side Code
+
+// Slide 17: Move to SSR
+
+// Slide 18: Problems with Hydration
+
+// Slide 19: Solutions to Hydration
+
+// Slide 20: RSC, Partial Hydration
+
+// How it comes back to bundlers
+
+// Thank You!!
+
+
+// Open Question: Should I even cover bundlers?? (Likely Not)
+// Check Excalidraw
 
 
 
