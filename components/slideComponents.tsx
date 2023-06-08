@@ -9,7 +9,7 @@ const getCurrentSlideNumber = () => {
   return 0;
 }
 
-const TOTAL_SLIDE_COUNT = 20;
+const TOTAL_SLIDE_COUNT = 23;
 
 function SlideContainer({ children, variant, isFullWidth = false }: { children: React.ReactNode; variant?: 'heading'; isFullWidth?: boolean }) {
   const currentSlideNumber = getCurrentSlideNumber();
@@ -46,9 +46,33 @@ function Profile() {
   )
 }
 
+function ThankYou() {
+  return (
+    <div>
+      <Heading>Thank You!</Heading>
+      <div className="flex center">
+        <div className="profile-image-container"><img src="https://res.cloudinary.com/saurabhdaware/image/upload/v1685863737/profile-picture_nnng5k.jpg" height="100px" width="100px" alt="Profile Picture of Saurabh Daware" /></div>
+        <div className="flex-1 thankyou-name">
+          <SubHeading>
+            <b>Saurabh Daware</b>
+          </SubHeading>
+          <div>
+            <p style={{ marginBottom: '4px' }}>twitter.com/saurabhdawaree</p>
+            <p>github.com/saurabhdaware</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const TitleSlotContainer = ({ children }) => <div style={{ width: '1000px', textAlign: 'center' }}>{children}</div>
+
 export {
   SlideContainer,
   Heading,
   SubHeading,
-  Profile
+  Profile,
+  ThankYou,
+  TitleSlotContainer
 }

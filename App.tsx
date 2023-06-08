@@ -24,12 +24,19 @@ const useSlides = () => {
 
   const keydownHandler = (e: KeyboardEvent): any => {
     const currentSlideNumber = window.location.pathname === '/' ? 1 : Number(window.location.pathname.slice(1));
+    const isFocussedInsideEditor = document.activeElement.hasAttribute('contenteditable');
+    console.log(document.activeElement);
+    const isSpecialKeyPressed = !isFocussedInsideEditor || (isFocussedInsideEditor && e.altKey);
 
-    if (e.key === 'ArrowRight') {
+    if (e.key === 'Meta') return;
+
+    if (e.key === 'ArrowRight' && isSpecialKeyPressed) {
+      console.log('right');
       navigate(`/${currentSlideNumber + 1}`);
     } 
-  
-    if (e.key === 'ArrowLeft') {
+    
+    if (e.key === 'ArrowLeft' && isSpecialKeyPressed) {
+      console.log('left');
       navigate(`/${currentSlideNumber - 1}`);
     }
   }

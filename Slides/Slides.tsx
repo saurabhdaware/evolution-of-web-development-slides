@@ -1,6 +1,6 @@
 import React from "react";
-import { Heading, Profile, SlideContainer, SubHeading } from "../components/slideComponents";
-import { SandpackCodeViewer, SandpackLayout, SandpackProvider } from "@codesandbox/sandpack-react";
+import { Heading, Profile, SlideContainer, SubHeading, ThankYou, TitleSlotContainer } from "../components/slideComponents";
+import { Sandpack, SandpackCodeViewer, SandpackLayout, SandpackProvider } from "@codesandbox/sandpack-react";
 import dedent from 'dedent';
 
 function Slide0() {
@@ -33,9 +33,6 @@ function Slide3() {
   return (
     <SlideContainer isFullWidth>
       <iframe 
-        style={{ border: '1px solid rgba(0, 0, 0, 0.1)', borderRadius: '2px' }} 
-        width="100%" 
-        height="100%" 
         src="https://codesandbox.io/p/sandbox/billowing-snowflake-80hjnf?file=%2Findex.php%3A20%2C9&embed=1&view=editor" 
         allowFullScreen
       />
@@ -60,7 +57,7 @@ function Slide4() {
 function Slide5() {
   return (
     <SlideContainer>
-      <div style={{ width: '1000px' }}>
+      <TitleSlotContainer>
         <SandpackProvider >
           <SandpackLayout style={{ backgroundColor: 'white' }}>
             <SandpackCodeViewer 
@@ -76,7 +73,7 @@ function Slide5() {
             />
           </SandpackLayout>
         </SandpackProvider>
-      </div>
+      </TitleSlotContainer>
     </SlideContainer>
   )
 }
@@ -86,7 +83,7 @@ function Slide5() {
 function Slide6() {
   return (
     <SlideContainer>
-      <div style={{ width: '1000px' }}>
+      <TitleSlotContainer>
         <SandpackProvider>
           <SandpackLayout style={{ backgroundColor: 'white' }}>
             <SandpackCodeViewer 
@@ -111,7 +108,7 @@ function Slide6() {
             />
           </SandpackLayout>
         </SandpackProvider>
-      </div>
+      </TitleSlotContainer>
     </SlideContainer>
   )
 }
@@ -120,7 +117,7 @@ function Slide6() {
 function Slide7() {
   return (
     <SlideContainer>
-      <div style={{ width: '1000px' }}>
+      <TitleSlotContainer>
         <SandpackProvider>
           <SandpackLayout style={{ backgroundColor: 'white' }}>
             <SandpackCodeViewer 
@@ -148,7 +145,7 @@ function Slide7() {
             />
           </SandpackLayout>
         </SandpackProvider>
-      </div>
+      </TitleSlotContainer>
     </SlideContainer>
   )
 }
@@ -156,16 +153,33 @@ function Slide7() {
 
 function Slide8() {
   return (
+    <SlideContainer>
+      <Heading>Year 2012 - 2015</Heading>
+      <SubHeading>
+        <table>
+            <tr><td>2013</td><td>Webpack Release</td></tr>
+            <tr><td>2014</td><td>Babel Release</td></tr>
+            <tr><td>2015</td><td>ES6 / ES2015 Release</td></tr>
+            <tr><td>2015</td><td>Webpack + Babel + React + ES6 Got Popular</td></tr>
+        </table>
+      </SubHeading>
+    </SlideContainer>
+  )
+}
+
+
+function Slide9() {
+  return (
     <SlideContainer variant="heading">
       <Heading size="medium">✨ Bundlers ✨</Heading>
     </SlideContainer>
   )
 }
 
-function Slide9() {
+function Slide10() {
   return (
     <SlideContainer>
-      <div style={{ width: '1000px' }}>
+      <TitleSlotContainer>
         <SandpackProvider>
           <SandpackLayout style={{ backgroundColor: 'white' }}>
             <SandpackCodeViewer 
@@ -194,16 +208,16 @@ function Slide9() {
             />
           </SandpackLayout>
         </SandpackProvider>
-      </div>
+      </TitleSlotContainer>
     </SlideContainer>
   )
 }
 
 
-function Slide10() {
+function Slide11() {
   return (
     <SlideContainer>
-      <div style={{ width: '1000px', textAlign: 'center' }}>
+      <TitleSlotContainer>
         <SubHeading>Webpack + TypeScript</SubHeading><br/>
         <SandpackProvider>
           <SandpackLayout style={{ backgroundColor: 'white' }}>
@@ -238,16 +252,16 @@ function Slide10() {
             />
           </SandpackLayout>
         </SandpackProvider>
-      </div>
+      </TitleSlotContainer>
     </SlideContainer>
   )
 }
 
 
-function Slide11() {
+function Slide12() {
   return (
     <SlideContainer>
-      <div style={{ width: '1000px', textAlign: 'center' }}>
+      <TitleSlotContainer>
         <SubHeading>Webpack + Babel</SubHeading><br/>
         <SandpackProvider>
           <SandpackLayout style={{ backgroundColor: 'white' }}>
@@ -285,16 +299,16 @@ function Slide11() {
             />
           </SandpackLayout>
         </SandpackProvider>
-      </div>
+      </TitleSlotContainer>
     </SlideContainer>
   )
 }
 
 
-function Slide12() {
+function Slide13() {
   return (
     <SlideContainer>
-      <div style={{ width: '1000px', textAlign: 'center' }}>
+      <TitleSlotContainer>
         <SubHeading>Webpack + Vue</SubHeading><br/>
         <SandpackProvider>
           <SandpackLayout style={{ backgroundColor: 'white' }}>
@@ -327,7 +341,7 @@ function Slide12() {
             />
           </SandpackLayout>
         </SandpackProvider>
-      </div>
+      </TitleSlotContainer>
     </SlideContainer>
   )
 }
@@ -335,10 +349,10 @@ function Slide12() {
 
 
 
-function Slide13() {
+function Slide14() {
   return (
     <SlideContainer>
-      <div style={{ width: '1000px', textAlign: 'center' }}>
+      <TitleSlotContainer>
         <SubHeading>Webpack + New Syntax</SubHeading><br/>
         <SandpackProvider>
           <SandpackLayout style={{ backgroundColor: 'white' }}>
@@ -372,12 +386,143 @@ function Slide13() {
             />
           </SandpackLayout>
         </SandpackProvider>
+      </TitleSlotContainer>
+    </SlideContainer>
+  )
+}
+
+function Slide15() {
+  return (
+    <SlideContainer>
+      <div style={{ padding: '150px' }}>
+        <img width="100%" src="https://res.cloudinary.com/saurabhdaware/image/upload/v1686169527/Untitled-2022-06-16-2029_kuart5.png" alt="diagram with webpack at center and other tools connecting to it" />
       </div>
     </SlideContainer>
   )
 }
 
-// Slide 14: https://res.cloudinary.com/saurabhdaware/image/upload/v1686169527/Untitled-2022-06-16-2029_kuart5.png
+function Slide16() {
+  return (
+    <SlideContainer>
+      <TitleSlotContainer>
+        <Sandpack 
+          template="react-ts" 
+          files={{
+          'App.tsx': dedent`
+            import React from 'react';
+
+            const fruits = ['Apple', 'Banana', 'Orange', 'Watermelon'];
+
+            const findFruit = (searchTerm: string) => {
+              const results = fruits.find((fruit) => 
+                fruit.toLowerCase()
+                .startsWith(searchTerm.toLowerCase())
+              )
+
+              return results ?? 'No Results';
+            }
+            
+            function App() {
+              const [currentSearchTerm, setCurrentSearchTerm] = React.useState('');
+
+              const handleInput = (e) => {
+                setCurrentSearchTerm(e.target.value);
+              }
+              
+              return (
+                <div>
+                  <h2>Fruit Search in JavaScript</h2>
+                  <input onInput={handleInput} type="search" autoComplete="off" />
+                  <button type="submit">Search</button>
+
+                  <div style={{ padding: '20px 0px' }}>
+                    <b>Search Term</b>: {currentSearchTerm}<br/>
+                    <b>Search Results</b>: {currentSearchTerm ? findFruit(currentSearchTerm) : ''}
+                  </div>
+                </div>
+              )
+            }
+
+            export default App;
+            
+            `
+          }} 
+          options={{
+            showConsoleButton: true,
+          }}
+        />
+      </TitleSlotContainer>
+    </SlideContainer>
+  )
+}
+
+function Slide17() {
+  return (
+    <SlideContainer>
+      <TitleSlotContainer>
+        <SubHeading>Problems with CSR</SubHeading><br/>
+        <div><img width="100%" src="https://res.cloudinary.com/saurabhdaware/image/upload/v1686249424/Screenshot_2023-06-09_at_12.06.15_AM_l6w31i.png" /></div>
+      </TitleSlotContainer>
+    </SlideContainer>
+  )
+}
+
+function Slide18() {
+  return (
+    <SlideContainer>
+      <TitleSlotContainer>
+        <SubHeading>SSR</SubHeading><br/>
+        <div><img width="100%" src="https://res.cloudinary.com/saurabhdaware/image/upload/v1686249477/Screenshot_2023-06-09_at_12.07.43_AM_ot4fx7.png" /></div>
+      </TitleSlotContainer>
+    </SlideContainer>
+  )
+}
+
+
+function Slide19() {
+  return (
+    <SlideContainer isFullWidth>
+      <iframe src="https://stackblitz.com/edit/github-vke2fz?embed=1&file=src%2Fentry-server.jsx&theme=light" />
+    </SlideContainer>
+  )
+}
+
+function Slide20() {
+  return (
+    <SlideContainer>
+      <SubHeading><a target="_blank" href="https://razorpay.com">razorpay.com</a></SubHeading>
+    </SlideContainer>
+  )
+}
+
+function Slide21() {
+  return (
+    <SlideContainer>
+      <TitleSlotContainer>
+        <img width="100%" src="https://res.cloudinary.com/saurabhdaware/image/upload/v1686250752/Screenshot_2023-06-09_at_12.28.59_AM_fpciiu.png" />
+      </TitleSlotContainer>
+    </SlideContainer>
+  )
+}
+
+
+function Slide22() {
+  return (
+    <SlideContainer>
+      <SubHeading><a target="_blank" href="https://stackblitz.com/edit/nextjs-13-app-dir-razorpay-com?file=app%2Fpage.tsx">React Server Components Example</a></SubHeading>
+    </SlideContainer>
+  )
+}
+
+function Slide23() {
+  return (
+    <SlideContainer variant="heading">
+      <ThankYou />
+    </SlideContainer>
+  )
+}
+
+// Slide 14: 
 
 // Slide 15: Server / Client Builds in Webpack
 
@@ -416,4 +561,14 @@ export {
   Slide11,
   Slide12,
   Slide13,
+  Slide14,
+  Slide15,
+  Slide16,
+  Slide17,
+  Slide18,
+  Slide19,
+  Slide20,
+  Slide21,
+  Slide22,
+  Slide23,
 }
