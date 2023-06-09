@@ -35,6 +35,7 @@ function Slide3() {
       <iframe 
         src="https://codesandbox.io/p/sandbox/billowing-snowflake-80hjnf?file=%2Findex.php%3A20%2C9&embed=1&view=editor" 
         allowFullScreen
+        loading="eager"
       />
       <a target="_blank" href="https://codesandbox.io/p/sandbox/billowing-snowflake-80hjnf?file=%2Findex.php">Open in Editor</a>
     </SlideContainer>
@@ -158,6 +159,7 @@ function Slide8() {
       <SubHeading>
         <table>
             <tr><td>2013</td><td>Webpack Release</td></tr>
+            <tr><td>2013</td><td>React Release</td></tr>
             <tr><td>2014</td><td>Babel Release</td></tr>
             <tr><td>2015</td><td>ES6 / ES2015 Release</td></tr>
             <tr><td>2015</td><td>Webpack + Babel + React + ES6 Got Popular</td></tr>
@@ -482,7 +484,7 @@ function Slide18() {
 function Slide19() {
   return (
     <SlideContainer isFullWidth>
-      <iframe src="https://stackblitz.com/edit/github-vke2fz?embed=1&file=src%2Fentry-server.jsx&theme=light" />
+      <iframe src="https://stackblitz.com/edit/github-vke2fz?embed=1&file=src%2FCounter.jsx&theme=light" />
     </SlideContainer>
   )
 }
@@ -515,6 +517,23 @@ function Slide22() {
 }
 
 function Slide23() {
+  return (
+    <SlideContainer>
+      <SubHeading>Summary</SubHeading>
+      <ul>
+        <li>PHP - Bad UX, Reloads the page 😢</li>
+        <li>Move towards JavaScript 🤗</li>
+        <li>Slow page loading with CSR because too much JavaScript 😢</li>
+        <li>Fast page loading with SSR 🤗</li>
+        <li>Slow Interactivty and Main Thread Blocks due to hydration 😢</li>
+        <li>Ship Less JavaScript with Server Components 🤗</li>
+
+      </ul>
+    </SlideContainer>
+  )
+}
+
+function Slide24() {
   return (
     <SlideContainer variant="heading">
       <ThankYou />
@@ -571,4 +590,5 @@ export {
   Slide21,
   Slide22,
   Slide23,
+  Slide24,
 }
