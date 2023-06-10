@@ -145,6 +145,7 @@ table, td, th {
 
 ul {
   padding-left: 20px;
+  min-width: 650px;
 }
 
 li {

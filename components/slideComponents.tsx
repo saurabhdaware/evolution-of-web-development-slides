@@ -9,7 +9,7 @@ const getCurrentSlideNumber = () => {
   return 0;
 }
 
-const TOTAL_SLIDE_COUNT = 23;
+const TOTAL_SLIDE_COUNT = 29;
 
 function SlideContainer({ children, variant, isFullWidth = false }: { children: React.ReactNode; variant?: 'heading'; isFullWidth?: boolean }) {
   const currentSlideNumber = getCurrentSlideNumber();

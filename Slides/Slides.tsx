@@ -510,13 +510,99 @@ function Slide21() {
 
 function Slide22() {
   return (
-    <SlideContainer>
-      <SubHeading><a target="_blank" href="https://stackblitz.com/edit/nextjs-13-app-dir-razorpay-com?file=app%2Fpage.tsx">React Server Components Example</a></SubHeading>
+    <SlideContainer isFullWidth>
+      <iframe src="https://stackblitz.com/edit/nextjs-13-app-dir-razorpay-com?embed=1&file=app%2Fpage.tsx&theme=light" />
     </SlideContainer>
   )
 }
 
 function Slide23() {
+  return (
+    <SlideContainer>
+      <SubHeading>Summary</SubHeading>
+      <ul>
+      </ul>
+    </SlideContainer>
+  )
+}
+
+function Slide24() {
+  return (
+    <SlideContainer>
+      <SubHeading>Summary</SubHeading>
+      <ul>
+        <li>PHP - Bad UX, Reloads the page 😢</li>
+      </ul>
+    </SlideContainer>
+  )
+}
+
+
+function Slide25() {
+  return (
+    <SlideContainer>
+      <SubHeading>Summary</SubHeading>
+      <ul>
+        <li>PHP - Bad UX, Reloads the page 😢</li>
+        <li>Move towards JavaScript 🤗</li>
+      </ul>
+    </SlideContainer>
+  )
+}
+
+
+
+function Slide26() {
+  return (
+    <SlideContainer>
+      <SubHeading>Summary</SubHeading>
+      <ul>
+        <li>PHP - Bad UX, Reloads the page 😢</li>
+        <li>Move towards JavaScript 🤗</li>
+        <li>Slow page loading with CSR because too much JavaScript 😢</li>
+      </ul>
+    </SlideContainer>
+  )
+}
+
+
+
+function Slide27() {
+  return (
+    <SlideContainer>
+      <SubHeading>Summary</SubHeading>
+      <ul>
+        <li>PHP - Bad UX, Reloads the page 😢</li>
+        <li>Move towards JavaScript 🤗</li>
+        <li>Slow page loading with CSR because too much JavaScript 😢</li>
+        <li>Fast page loading with SSR 🤗</li>
+      </ul>
+    </SlideContainer>
+  )
+}
+
+
+
+
+function Slide28() {
+  return (
+    <SlideContainer>
+      <SubHeading>Summary</SubHeading>
+      <ul>
+        <li>PHP - Bad UX, Reloads the page 😢</li>
+        <li>Move towards JavaScript 🤗</li>
+        <li>Slow page loading with CSR because too much JavaScript 😢</li>
+        <li>Fast page loading with SSR 🤗</li>
+        <li>Slow Interactivty and Main Thread Blocks due to hydration 😢</li>
+      </ul>
+    </SlideContainer>
+  )
+}
+
+
+
+
+function Slide29() {
   return (
     <SlideContainer>
       <SubHeading>Summary</SubHeading>
@@ -527,13 +613,13 @@ function Slide23() {
         <li>Fast page loading with SSR 🤗</li>
         <li>Slow Interactivty and Main Thread Blocks due to hydration 😢</li>
         <li>Ship Less JavaScript with Server Components 🤗</li>
-
       </ul>
     </SlideContainer>
   )
 }
 
-function Slide24() {
+
+function Slide30() {
   return (
     <SlideContainer variant="heading">
       <ThankYou />
@@ -591,4 +677,10 @@ export {
   Slide22,
   Slide23,
   Slide24,
+  Slide25,
+  Slide26,
+  Slide27,
+  Slide28,
+  Slide29,
+  Slide30,
 }
