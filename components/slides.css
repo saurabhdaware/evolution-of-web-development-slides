@@ -123,6 +123,30 @@ iframe {
   font-weight: 400;
 }
 
+.slide-link {
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 100%;
+  padding: 10px;
+  font-size: 2rem;
+  border: 1px solid #222;
+  position: fixed;
+  right: 10px;
+  top: 0px;
+  bottom: 0px;
+  max-height: max-content;
+  width: 70px;
+  text-align: center;
+  margin: auto;
+  color: #222;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.link-backward {
+  left: 10px;
+  right: unset;
+}
+
 a {
   text-decoration: none;
   color: #09f;

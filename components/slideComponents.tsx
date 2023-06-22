@@ -1,5 +1,6 @@
 import React from "react";
 import './slides.css';
+import { Link } from "react-router-dom";
 
 const getCurrentSlideNumber = () => {
   if (typeof window !== 'undefined') {
@@ -20,6 +21,8 @@ function SlideContainer({ children, variant, isFullWidth = false }: { children: 
       <div className={`slide-center-container ${isFullWidth ? 'is-fullwidth' : ''}`}>
         {children}
       </div>
+      { currentSlideNumber !== TOTAL_SLIDE_COUNT ? <Link className="slide-link link-forward" to={`/${currentSlideNumber + 1}`}>→</Link> : null }
+      { currentSlideNumber !== 0 ? <Link className="slide-link link-backward" to={`/${currentSlideNumber - 1}`}>←</Link> : null }
     </div>
   );
 }
