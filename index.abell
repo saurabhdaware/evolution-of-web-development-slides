@@ -6,6 +6,7 @@
 }}
 <html>
   <head>
+    <title>Evolution of Web Development - Saurabh Daware</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -13,8 +14,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Evolution of Web Development - Saurabh Daware" />
     
-    <meta name="twitter:card" content="summary_large_image"></meta>
-    <meta name="twitter:creator" content="@saurabhdawaree"></meta>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@saurabhdawaree" />
 
     <meta property="og:image:secure_url" itemprop="image" content="https://res.cloudinary.com/saurabhdaware/image/upload/c_scale,w_600/v1687452081/Screenshot_2023-06-22_at_10.10.51_PM_rhmvdg.png"/>
     <meta property="og:image" itemprop="image" content="https://res.cloudinary.com/saurabhdaware/image/upload/c_scale,w_600/v1687452081/Screenshot_2023-06-22_at_10.10.51_PM_rhmvdg.png"/>
